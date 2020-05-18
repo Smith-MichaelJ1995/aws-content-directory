@@ -1,15 +1,15 @@
 import { Component } from '@angular/core'
-import { AuthenticationService, UserDetails } from '../authentication.service'
+import { AuthenticationService, ResourceDetails } from '../authentication.service'
 
 @Component({
   templateUrl: './profile.component.html'
 })
 export class ProfileComponent {
-  details: UserDetails
+  resources: ResourceDetails[]
 
   constructor(private auth: AuthenticationService) {}
 
   ngOnInit() {
-    this.details = this.auth.getUserDetails()
+    this.resources = this.auth.getResourceDetails()
   }
 }

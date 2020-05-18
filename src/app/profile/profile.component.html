@@ -1,21 +1,21 @@
 <div class="container">
   <div class="jumbotron mt-5">
     <div class="col-sm-8 mx-auto">
-      <h1 class="text-center">PROFILE</h1>
+      <h1 class="text-center">Resources:</h1>
     </div>
-    <table class="table col-md-6 mx-auto">
-      <tr>
-        <td>Fist Name</td>
-        <td>{{ details?.identity.first_name }}</td>
-      </tr>
-      <tr>
-        <td>Last Name</td>
-        <td>{{ details?.identity.last_name }}</td>
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td>{{ details?.identity.email }}</td>
-      </tr>
+    <table *ngFor="let resource of resources" class="table col-md-6 mx-auto">
+        <tr>
+          <td><b>Name</b></td>
+          <td>{{ resource.name }}</td>
+        </tr>
+        <tr>
+          <td><b>Description</b></td>
+          <td>{{ resource.description }}</td>
+        </tr>
+        <tr>
+          <td><b>Link</b></td>
+          <td><a href="{{ resource.link }}">{{ resource.link }}</a></td>
+        </tr>
     </table>
   </div>
 </div>
