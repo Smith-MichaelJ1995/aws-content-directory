@@ -1,0 +1,12 @@
+[
+    {
+        "name": "EC2 basics",
+        "description":"This contains information about EC2",
+        "link":"https://www.guru99.com/aws-tutorial.html"
+    },
+    {
+        "name": "S3 beginners",
+        "description":"This contains information about S3",
+        "link":"https://www.edureka.co/blog/s3-aws-amazon-simple-storage-service/"
+    }
+]
