@@ -8,5 +8,10 @@
         "name": "S3 beginners",
         "description":"This contains information about S3",
         "link":"https://www.edureka.co/blog/s3-aws-amazon-simple-storage-service/"
+    },
+    {
+        "name": "EMR from scratch",
+        "description":"This is test link about EMRs",
+        "link":"https://aws.amazon.com/emr/getting-started/"
     }
 ]
